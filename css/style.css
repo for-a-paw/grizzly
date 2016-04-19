@@ -2522,10 +2522,15 @@ button.mfp-close{
 
 .number-bl{
     margin-right: 37px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .number-bl .pre-title{
     text-align: center;
+    padding-left: 11px;
 }
 
 .number-bl input{
@@ -2719,6 +2724,8 @@ button.mfp-close{
 
 .pr-block-title span{
     padding-left: 3px;
+    position: relative;
+    top: -2px;
 }
 
 .pr-block-title a{

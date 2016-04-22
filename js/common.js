@@ -7,10 +7,8 @@ $(window).load(function(){
 $(document).click(function(event) {
   if($(event.target).closest(".search-field").length){
     return;
-    console.log(1);
   }else if ($(event.target).is(".search-btn, .search-btn i")) {
     $(".search-field").toggleClass("search-field_open");
-      console.log(2);
   } else if ($(".search-field").hasClass("search-field_open")) {
     $('.search-field').removeClass("search-field_open");
     console.log(3);
@@ -95,6 +93,75 @@ $(document).ready(function(){
     });
 
     //magnificPopup
+
+		//Общтй класс для всплывающих окон
     $(".popup").magnificPopup();
+
+		//Класс для галлереи
+		$('.popup-gallery').each(function() { // the containers for all your galleries
+			$(this).magnificPopup({
+			delegate: 'a', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled:true
+			}
+		});
+		});
+
+		//Всплывающее окно "Лицензия активирована"
+		$('.js-activate-popup').magnificPopup({
+    items: [
+      {
+        src: '#lic-activate',
+        type: 'inline'
+      }
+    ]
+		});
+
+		//Всплывающее окно "Спасибо за ваш заказ"
+		$('.js-thanks-popup').magnificPopup({
+		items: [
+			{
+				src: '#thanks-form',
+				type: 'inline'
+			}
+		]
+		});
+
+		//Всплывающее окно "Спасибо за ваш заказ(Продление лицензии)"
+		$('.js-thanks-popupProdlit').magnificPopup({
+		items: [
+			{
+				src: '#thanks-form_prodlit',
+				type: 'inline'
+			}
+		]
+		});
+
+	//formstyler
+	 $('select,input[type="radio"]').styler();
+
+	//sidebar menu toggle
+	$(".sidebar-menu > li a").on("click", function(){
+		$(this).next("ul").slideToggle();
+	});
+
+	//chosen-product(ВЫБОР ПРОДУКТА)
+	$(".device-block-btn").on("click", function(){
+		$(".device-block-btn").parent().removeClass("chosen-product");
+		$(this).text("Выбран");
+		$(this).parent().addClass("chosen-product");
+	});
+
+	$(".js-title-btn").on("click", function(){
+		$(this).toggleClass("order-title_hide");
+		$(this).parent().nextAll(".pur-item-body").fadeToggle(400);
+	});
+
+	//product-card-tabs
+
+	$.ionTabs("#product-card-tabs", {
+    type: "none", // hash, storage или none
+  });
 
 });

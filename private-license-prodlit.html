@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
-	<title>Grizzly - Личный кабинет</title>
+	<title>Grizzly - Личный кабинет - Лицензия - Продлить лицензию</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -66,7 +66,9 @@
 		<div class="layout-container">
 			<ul class="bc-list clearfix">
 				<li><a href="#">Главная</a><span class="bc-arr">&rarr;</span></li>
-				<li>Личный кабинет</li>
+				<li><a href="#">Личный кабинет</a><span class="bc-arr">&rarr;</span></li>
+				<li><a href="#">Лицензия</a><span class="bc-arr">&rarr;</span></li>
+				<li>Продлить лицензию</li>
 			</ul>
 		</div>
 	</div>
@@ -75,43 +77,56 @@
 	<!-- BEGIN MAIN -->
 	<main class="main page private-page">
 		<div class="layout-container">
-			<h1 class="main-title">Личный кабинет</h1>
+			<aside class="sidebar">
+					<ul class="sidebar-menu">
+						<li><a href="#">Устройства</a></li>
+						<li class="active"><a href="#">Лицензия</a>
+								<ul>
+									<li class="active"><a href="#">Продлить лицензию</a></li>
+									<li><a href="#">Активировать лицензию</a></li>
+									<li><a href="#">Ваши лицензии</a></li>
+									<li><a href="#">Как оформить заказ</a></li>
+									<li><a href="#">Оплата и доставка</a></li>
+								</ul>
+						</li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Интернет-магазин</a></li>
+						<li><a href="#">История покупок</a></li>
+						<li><a href="#">Учетная запись</a></li>
+					</ul>
+			</aside>
 
-			<div class="pr-blocks clearfix">
+			<div class="right-content">
+				<h1 class="main-title">Продлить лицензию</h1>
+				<p class="short-descr">Для того, чтобы получить скидку при обновлении лицензии, пожалуйста, введите данные вашей текущей лицензии и нажмите кнопку «Продлить лицензию». </p>
 
-				<div class="pr-blocks-row clearfix">
-					<div class="pr-block your-block">
-						<h2 class="pr-block-title"><a href="#">Ваши устройства</a><i class="circle-arr-left"></i></h2>
-						<div class="pr-block-body clearfix">
-							<div class="pr-block-descr">Нет добавленных устройств</div>
-							<button class="pr-block-btn btn-blue">Добавить</button>
-						</div>
-					</div>
-
-					<div class="pr-block your-block">
-						<h2 class="pr-block-title"><a href="#">Ваши Лицензии</a><i class="circle-arr-left"></i></h2>
-						<div class="pr-block-body clearfix">
-							<div class="pr-block-descr">Нет добавленных лицензий</div>
-							<button class="pr-block-btn btn-blue">Добавить</button>
-						</div>
-					</div>
+				<div class="lic-key-block">
+					<h4 class="lic-key-title">Введите номер лицензионного ключа </h4>
+					<p class="lic-key-descr">В формате XXXX-XXXXXX-XXXXXXXX <br>
+						или XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+					</p>
+					<form class="key-form"  name="key-form" action="#" method="post">
+						<input type="text" name="key">
+						<input type="submit" value="Продлить лицензию">
+					</form>
 				</div>
 
-				<div class="pr-blocks-row clearfix">
-					<div class="pr-block your-block">
-						<h2 class="pr-block-title"><a href="#">История покупок</a><i class="circle-arr-left"></i></h2>
-						<div class="pr-block-body clearfix">
-							<div class="pr-block-descr">Список совершенных покупок</div>
-							<button class="pr-block-btn btn-light">Подробнее</button>
-						</div>
+				<div class="how-info popup-gallery clearfix">
+					<h2 class="how-info-title">Как найти информацию о текущей лицензии</h2>
+
+					<div class="how-block">
+						<p class="how-block-title"><span class="h-num">1. </span> Нажмите кнопку <b>«Информация»</b> <br>в левом нижнем углу</p>
+						<a href="img/pict/license-inst1.jpg"><img src="img/pict/license-inst1.jpg" alt="Фото инструкция"></a>
 					</div>
 
-					<div class="pr-block your-block">
-						<h2 class="pr-block-title"><a href="#">Учетная запись</a><i class="circle-arr-left"></i></h2>
-						<div class="pr-block-body clearfix">
-							<div class="pr-block-descr">Изменить данные учетной записи</div>
-							<button class="pr-block-btn btn-light">Подробнее</button>
-						</div>
+					<div class="how-block">
+						<p class="how-block-title"><span class="h-num">2. </span> Далее нажмите вкладку <br><b>«Управление лицензией»</b> <br>в верхней части окна</p>
+						<a href="img/pict/license-inst2.jpg"><img src="img/pict/license-inst2.jpg" alt="Фото инструкция"></a>
+					</div>
+
+					<div class="how-block">
+						<p class="how-block-title"><span class="h-num">3. </span> В верхней части окна вы можете<br>посмотреть номер (ключ) лицензии.</p>
+						<a href="img/pict/license-inst2.jpg"><img src="img/pict/license-inst2.jpg" alt="Фото инструкция"></a>
 					</div>
 				</div>
 
@@ -263,6 +278,26 @@
 			<input type="email" name="e-mail" placeholder="E-mail">
 
 			<input type="submit" class="submit-btn" value="Восстановить">
+		</form>
+	</div>
+</div>
+
+<!-- Popup "СПАСИБО ЗА ВАШ ЗАКАЗ" -->
+<div class="hidden">
+	<div class="popup-form thanks-form" id="thanks-form">
+		<div class="popup-head clearfix">
+			<h2 class="section-title">Спасибо за ваш заказ</h2>
+		</div>
+		<p>Новый ключ лицензии активируется после<br>окончания срока действия вашей <br>текущей лицензии. </p>
+
+		<h4 class="popup-subtitle">Период действия:</h4>
+		<p>С 1 июля 2016 по 29 июня 2017 года</p>
+		<form action="#" method="post" name="after-order">
+			<h4 class="popup-subtitle">Код вашей лицензии</h4>
+			<input type="text" name="your-code" value="7387684E — 4AFB — 4E32 — B22F — A62949EDCB82">
+			<input type="submit" value="Отправить код на телефон и e-mail">
+			<input class="send-to-email" type="submit" value="Отправить код на e-mail">
+			<a href="#" class="btn-light thanks-btn">Скачать программу</a>
 		</form>
 	</div>
 </div>

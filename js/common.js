@@ -158,10 +158,4 @@ $(document).ready(function(){
 		$(this).parent().nextAll(".pur-item-body").fadeToggle(400);
 	});
 
-	//product-card-tabs
-
-	$.ionTabs("#product-card-tabs", {
-    type: "none", // hash, storage или none
-  });
-
 });
